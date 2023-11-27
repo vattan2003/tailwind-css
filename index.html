@@ -7,17 +7,133 @@
     <title>Document</title>
     <!--taiwind cdn-->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <nav class="bg-green-100 flex items-center justify-between p-4 shadow-5xl">
-        <h1 class="text-3xl">greeden</h1>
-        <ul class="flex gap-5 text-grey-700">
-            <li><a href="" class="hover:underline">home</a></li>
-            <li><a href="" class="hover:underline">product</a></li>
-            <li><a href="" class="hover:underline">contact</a></li>
+    <nav class="bg-green-200 flex m-1 items-center justify-between p-4 shadow-xl sticky mt-0 sticky top-0">
+        <h1 class="text-5xl">Greeden</h1>
+        <!--menu bar adding-->
+       <div class="md:hidden"><i  class="fa-solid fa-bars" ></i></div> 
+        <ul class="flex gap-5 text-grey-700 hidden md:flex ">
+            <li><a href="" class="hover:underline hover:text-white">home</a></li>
+            <li><a href="" class="hover:underline hover:text-white">product</a></li>
+            <li><a href="" class="hover:underline hover:text-white">contact</a></li>
         </ul>
     </nav>
-</body>
+    
 
+    <!--heading-->
+    <div class="bg-green-200 m-1 px-10 flex justify-around items-center shadow-2xl pt-10 ">
+        <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisic</p>
+            <h1 class="text-3xl mt-3">Plants for your interior</h1>
+            <button class="bg-black text-white rounded-2xl p-2 mt-3 hover:bg-white hover:text-black ">shop now</button>
+            <button class="bg-white p-2 rounded-2xl border border-black hover:bg-black hover:text-white ">watch video</button>
+            <p class="mt-3 mb-10">100+ plant spices|100+clients</p>
+
+        </div>
+        <div>
+            <img src="rose.png" class="w-52">
+        </div>
+    </div>
+    <!--about us-->
+    <div class="text-center">
+        <p class="text-3xl font-bold mt-10">About us</p>
+        <p>this site for those whoadmire the bueaty and hormony of nature</p>
+    </div>
+    <!-- About us card section-->
+    <div class=" w-full items-center shadow-2xl mb-1 md:flex flex-row-3">
+        <div class="w-full text-center border border-black m-1 p-2 mt-10">
+            <i class="fa-regular fa-file "></i>
+            <h2 class="font-bold">Large Assortment</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tenetur, iste autem, voluptatibus minima
+                illo ad voluptatem soluta cumque sed adipisci perspiciatis enim accusantium temporibus. Officiis, neque
+                met? Quia, nostrum?</p>
+        </div>
+        <div class="w-full text-center border border-black m-1 p-2 mt-10">
+            <i class="fa-solid fa-recycle"></i>
+            <h2 class="font-bold">Free and Fast shipping</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tenetur, iste autem, voluptatibus minima
+                illo ad voluptatem soluta cumque sed adipisci perspiciatis enim accusantium temporibus. Officiis, neque
+                amet? Quia, nostrum?</p>
+        </div>
+        <div class="w-full text-center border border-black m-1 p-2 mt-10">
+            <i class="fa-solid fa-phone"></i>
+            <h2 class="font-bold">24/7 Support</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tenetur, iste autem, voluptatibus minima
+                illo ad voluptatem soluta cumque sed adipisci perspiciatis enim accusantium temporibus. Officiis, neque
+                amet? Quia, nostrum?</p>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <!--best seller section-->
+    <div class="text-center font-bold mt-10 mb-10">BEST SELLER</div>
+    <div class="flex md:grid-cols-2">
+
+        <div class="w-48 ">
+            <img class="h-48 transform hover:-translate-y-2" src="plant 1.webp">
+            <p>Rose plant</p>
+            <p class=" text-indigo-600"> ₹299(<del> ₹499</del>)</p>
+        </div>
+        <div class="w-48 ">
+            <img class="h-48 transform hover:-translate-y-2" src="plant 2.webp">
+            <p> Sun Flower plant</p>
+            <p class=" text-indigo-600">₹399(<del> ₹549</del>)</p>
+        </div >
+        <div class="w-48  transform hover:-translate-y-2">
+            <img class="h-48" src="plant 3.avif">
+            <p> Flower plant</p>
+            <p class=" text-indigo-600">₹399(<del> ₹619</del>)</p>
+        </div>
+        <div class="w-48 transform hover:-translate-y-2 ">
+            <img class="h-48" src="plant 4.avif">
+            <p> Flower plant</p>
+            <p class=" text-indigo-600">₹399(<del> ₹619</del>)</p>
+        </div>
+    </div>
+    <!--reviews section-->
+    <div class="text-center font-medium mt-10 m-1 underline ">
+        <h3>Customer Reviews</h3>
+    </div>
+    <div class="w-full justify-center shadow-2xl md:flex ">
+    <div class="w-full mt-12 m-1 text-white bg-black p-2 rounded  mb-12">
+        ⭐⭐⭐⭐4.6
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem velit et error iure, impedit nulla numquam.
+            Voluptatibus ea hic unde!</p>
+            <h3 class="text-2xl mt-2 text-indigo-600 ">Mathew</h3>
+    </div>
+    <div class="w-full mt-12 m-1 text-white bg-black p-2 rounded  mb-12 ">
+        ⭐⭐⭐3.4
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem velit et error iure, impedit nulla numquam.
+            Voluptatibus ea hic unde!</p>
+            <h3 class="text-2xl mt-2 text-indigo-600 ">Jhon</h3>
+
+    </div>
+    <div class="w-full mt-12 m-1 text-white bg-black p-2 rounded  mb-12 ">
+        ⭐⭐⭐⭐⭐5.0
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem velit et error iure, impedit nulla numquam.
+            Voluptatibus ea hic unde!</p>
+            <h3 class="text-2xl mt-2 text-indigo-600 ">Andrev</h3>
+
+    </div>
+    </div>
+<!--subscribe section-->
+<div class="mt-10 mb-10 text-center">
+    <p class="text-indigo-600">Join our News Letter</p>
+    <p>sign up for our email newspaper to get exclusive discounts,updates,and more</p>
+    <input type="text" class="w-1\/12\/3 border border-black mt-2"><br>
+    <button class="bg-black rounded-2xl underline text-white mt-2 p-2">SUBSCRIBE</button>
+</div>
+<!--footer-->
+<div class="text-left p-12 border border-black mt-10 shadow-2xl">
+    <p class="text-4xl">Greeden</p>
+    <p class="mt-2 mb-2">the standard chunk of lorem ipsum used since the 1500s is 
+        reprodued below for those interest
+    </p>
+    <p>©2021Greenday.com</p>
+</div>
 </html>
